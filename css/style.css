@@ -29,8 +29,16 @@ h6 {
 
 .home-section {
     background: linear-gradient(rgba(0, 0, 0, 0.7)), url(../images/bg.jpg) no-repeat center / cover;
+    animation: screen-open 2s ;
 }
-
+@keyframes screen-open {
+    from{
+        transform: scaleY(0);
+    }
+    to{
+        transform: scaleY(1);
+    }    
+}
 .home-content i {
     font-size: 12px;
     display: flex;
